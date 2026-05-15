@@ -1,12 +1,12 @@
 
 
 body{
-  font-family: Arial, sans-serif;
-  background:#f4f4f4;
+  /* font-family: Arial, sans-serif; */
+  background: linear-gradient(135deg, #525e75 0%, #8c929c 100%);
   display:flex;
   justify-content:center;
   align-items:center;
-  height:100vh;
+  height: 100vh;
   padding: 0;
   margin: 0;
 }
@@ -33,6 +33,9 @@ h1{
     background: #28a745;
     cursor: pointer;
 }
+.input-section button:hover{
+    background: #218838;
+}
 input{
   flex:1;
   padding:8px;
@@ -45,6 +48,9 @@ button{
   background:#007bff;
   color:white;
   border-radius:4px;
+}
+button:hover{
+  background:#0056b3;
 }
 
 ul{
@@ -81,4 +87,7 @@ li{
 
 .delete{
   background:red;
+}
+.delete:hover{
+  background: #dc3545;
 }

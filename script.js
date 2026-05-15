@@ -26,6 +26,7 @@ function renderTasks(){
   });
 }
 
+// add task from input
 function addTask(){
 
   const input = document.getElementById("taskInput");
@@ -40,10 +41,11 @@ function addTask(){
 
   saveTasks();
   renderTasks();
-
+alert("Task added successfully!");
   input.value = "";
 }
 
+// delete task by index
 function deleteTask(index){
 
   tasks.splice(index,1);
@@ -53,6 +55,7 @@ function deleteTask(index){
 
 }
 
+// edit task by index
 function editTask(index){
 
   const newTask = prompt("Edit task:", tasks[index]);
