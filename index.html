@@ -10,22 +10,24 @@
 
 </head>
 
-<body class="bg-gradient-to-r from-gray-300 to-gray-500 min-h-screen flex items-center justify-center">
+<body class="bg-gradient-to-r from-gray-300 to-gray-500 min-h-screen flex flex-col items-center justify-evenly">
 
-  <div class="space-y-5 py-6">
-    <div class="container bg-red-900 space-y-5">
-      <h1 class="text-3xl md:text-4xl font-mono  ">My To-Do List</h1>
 
-      <div class="input-section">
-        <input type="text" id="taskInput" placeholder="Enter a task">
-        <button class="text-[12px] sm:text-[] px-4 py-2" onclick="addTask()">Add Task</button>
-      </div>
+  <div class="container bg-red-900 space-y-5">
+    <h1 class="text-3xl md:text-4xl font-mono  ">My To-Do List</h1>
 
-      <ul id="taskList"></ul>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter a task">
+      <button class="text-[12px] sm:text-[] px-4 py-2" onclick="addTask()">Add Task</button>
     </div>
 
-    
+    <ul id="taskList"></ul>
   </div>
+
+<footer class="text-center mt-5 text-sm text-gray-600">
+    &copy; 2026 To-Do List App. All rights reserved.
+  </footer>
+
   <!-- /* 313234 525e75 8c929c */ -->
   <script src="script.js"></script>
 </body>
